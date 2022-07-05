@@ -18,7 +18,7 @@ db.pool.query(`CREATE TABLE lists (
     console.log('results', results);
 })
 app.get("/api", (req, res, next) =>{
-  return res.json({hello:"hello00012345678"});
+  return res.json({hello:"hello000123456789"});
 })
 app.get("/api/values", (req, res, next) => {
   db.pool.query("SELECT *FROM lists;", (err, results, fields) => {
